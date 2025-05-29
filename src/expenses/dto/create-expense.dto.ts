@@ -33,8 +33,8 @@ export class CreateExpenseDto {
   })
   @IsString()
   @IsNotEmpty()
-  @Matches(/^[a-zA-Z0-9\s\-_.,]+$/, {
-    message: 'A descrição deve conter apenas letras, números, espaços e os caracteres especiais: -_.,'
+  @Matches(/^[\p{L}0-9\s\-_.,]+$/u, {
+    message: 'A descrição deve conter apenas letras (com ou sem acento), números, espaços e os caracteres especiais: -_.,'
   })
   description: string;
 
