@@ -65,7 +65,7 @@ describe('ExpensesController (e2e)', () => {
         .send({
           description: 'Test expense',
           amount: 100,
-          date: new Date().toISOString(),
+          date: new Date().toISOString().slice(0, 10),
           category: 'FOOD',
         });
 
@@ -88,7 +88,7 @@ describe('ExpensesController (e2e)', () => {
         .send({
           description: 'Test expense',
           amount: 100,
-          date: new Date().toISOString(),
+          date: new Date().toISOString().slice(0, 10),
           category: 'FOOD',
         });
 
@@ -102,7 +102,7 @@ describe('ExpensesController (e2e)', () => {
         .send({
           description: 'Test expense',
           amount: 100,
-          date: new Date().toISOString(),
+          date: new Date().toISOString().slice(0, 10),
           category: 'FOOD',
         });
 
@@ -119,7 +119,7 @@ describe('ExpensesController (e2e)', () => {
         .send({
           description: 'Test expense 1',
           amount: 100,
-          date: new Date().toISOString(),
+          date: new Date().toISOString().slice(0, 10),
           category: 'FOOD',
         });
 
@@ -129,7 +129,7 @@ describe('ExpensesController (e2e)', () => {
         .send({
           description: 'Test expense 2',
           amount: 200,
-          date: new Date().toISOString(),
+          date: new Date().toISOString().slice(0, 10),
           category: 'FOOD',
         });
     });
@@ -161,7 +161,7 @@ describe('ExpensesController (e2e)', () => {
         .send({
           description: 'Test expense',
           amount: 100,
-          date: new Date().toISOString(),
+          date: new Date().toISOString().slice(0, 10),
           category: 'FOOD',
         });
 
@@ -197,7 +197,7 @@ describe('ExpensesController (e2e)', () => {
         .send({
           description: 'Test expense',
           amount: 100,
-          date: new Date().toISOString(),
+          date: new Date().toISOString().slice(0, 10),
           category: 'FOOD',
         });
 
@@ -241,7 +241,7 @@ describe('ExpensesController (e2e)', () => {
         .send({
           description: 'Test expense',
           amount: 100,
-          date: new Date().toISOString(),
+          date: new Date().toISOString().slice(0, 10),
           category: 'FOOD',
         });
 

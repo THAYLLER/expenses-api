@@ -10,8 +10,6 @@ import { ZodValidationPipe } from 'nestjs-zod';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { JwtModule } from '@nestjs/jwt';
-import { NotFoundException } from '@nestjs/common';
-import { Logger } from '@nestjs/common';
 
 @Module({
   imports: [
